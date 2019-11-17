@@ -1,0 +1,52 @@
+inherited FrmTeste_Surface: TFrmTeste_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited Panel2: TPanel [0]
+    inherited CHKTest: TCheckBox
+      TextSettings.Font.StyleExt = {00040000000100000004000000}
+    end
+    inherited Memo1: TMemo
+      Viewport.Width = 161.000000000000000000
+      Viewport.Height = 169.000000000000000000
+    end
+    inherited btnMatriz: TButton
+      StyledSettings = [Family, Style, FontColor]
+    end
+    inherited Panel3: TPanel
+      inherited mmoAluno: TMemo
+        Viewport.Width = 273.000000000000000000
+        Viewport.Height = 145.000000000000000000
+      end
+    end
+  end
+  inherited OK: TButton [1]
+  end
+  inherited Edit1: TEdit [2]
+  end
+  inherited SOMANDO: TLabel [3]
+  end
+  inherited Edit2: TEdit [4]
+  end
+  inherited Label1: TLabel [5]
+  end
+  inherited lblData: TLabel [6]
+  end
+  inherited Panel1: TPanel [7]
+  end
+  inherited editPrimo: TEdit [8]
+  end
+  inherited Button3: TButton [9]
+  end
+  inherited lblPrimo: TLabel [10]
+  end
+  inherited Label6: TLabel [11]
+  end
+  inherited Label7: TLabel [12]
+    inherited Button10: TButton
+      Position.X = 32.000000000000000000
+    end
+  end
+  inherited Label8: TLabel [13]
+  end
+end

@@ -1,0 +1,708 @@
+object FrmTeste: TFrmTeste
+  Left = 126
+  Top = 180
+  Caption = 'Aprendendo'
+  ClientHeight = 500
+  ClientWidth = 640
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  Left = 126
+  Top = 180
+  DesignerMasterStyle = 0
+  object Label8: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 536.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 7.000000000000000000
+    Text = 'VOC'#202' ACABOU DE PERDER TEMPO DA SUA VIDA'
+    TabOrder = 13
+  end
+  object Panel2: TPanel
+    Position.X = 24.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 601.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SUBMIT: TButton
+      Cursor = crHandPoint
+      StyledSettings = [Family, Size, Style]
+      Position.X = 496.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'SUBMIT'
+      TextSettings.FontColor = claCrimson
+      OnClick = SUBMITClick
+    end
+    object CHKTest: TCheckBox
+      StyledSettings = [Family, FontColor]
+      Position.X = 496.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'EU LI E ACEITO OS TERMOS'
+      TextSettings.Font.Size = 11.000000000000000000
+      TextSettings.Font.StyleExt = {00040000000100000004000000}
+      TextSettings.WordWrap = True
+      TextSettings.Trimming = Character
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 157.000000000000000000
+      Viewport.Height = 165.000000000000000000
+    end
+    object Button1: TButton
+      Position.X = 496.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Termos'
+      OnClick = Button1Click
+    end
+    object grupo: TGroupBox
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Selecione um tipo de Array'
+      TabOrder = 4
+      object RadioButton1: TRadioButton
+        Position.X = 8.000000000000000000
+        Position.Y = 22.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Unidimencional (Vetor)'
+      end
+      object RadioButton2: TRadioButton
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Bidimencional  (Matriz)'
+      end
+    end
+    object edtMatriz: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Position.X = 56.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnMatriz: TButton
+      Position.X = 56.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'TAMANHO'
+      OnClick = btnMatrizClick
+    end
+    object Button4: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'REFAZER'
+      OnClick = Button4Click
+    end
+    object Panel3: TPanel
+      Position.X = 192.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 241.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      object Label2: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Nome do Aluno'
+        TabOrder = 0
+      end
+      object Label5: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'NOTA 1'
+        TabOrder = 1
+      end
+      object mmoAluno: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 8.000000000000000000
+        Position.Y = 88.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 145.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 269.000000000000000000
+        Viewport.Height = 141.000000000000000000
+      end
+      object edtNome: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 8.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 175.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtNota1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Position.X = 56.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtNota2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 154.000000000000000000
+        Position.Y = 50.000000000000000000
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnTodos: TButton
+        Position.X = 192.000000000000000000
+        Position.Y = 13.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Todos alunos'
+        OnClick = btnTodosClick
+      end
+      object Button5: TButton
+        Position.X = 192.000000000000000000
+        Position.Y = 37.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Procurar Aluno'
+        OnClick = Button5Click
+      end
+      object Button6: TButton
+        Position.X = 192.000000000000000000
+        Position.Y = 61.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Adicionar Aluno'
+        OnClick = Button6Click
+      end
+    end
+    object ImageControl1: TImageControl
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000012C0000012C0806000000797D8E
+        75000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        0DD949444154785EEDDD7BB05DD55DC0F17591DA8412F242B0492028A1C10979
+        CC04021403251485F088645AD101037F641CD29AD40252CB4B47A12D238ACA94
+        7610C74A658688628B0CB58556790A011C12E84808619A402269092401211D28
+        C7BB2E2B422921F7E69EBDCFFE9DF3F9CCDCC95AFBFE752F77BEACB5CE3EFBF4
+        B5FA258000F628FF02349E600161081610866001610816108660016108161086
+        6001610816108660016108161086600161081610866001610816108660016178
+        801F957AECB967D3D7573C9856F6FFBB72C37369EB6BAF95EFD03493C78DEBFF
+        1A9F4E9F3E339D3E63563A68FCF8F29DE6102CDA6ECBABAFA61B1FFACF74EDDD
+        DF4BEB5E7CB15C259A1CAED366CC4CE71C7974B9D2798245DBFC60F3E674C5B7
+        6E4F37F6AFA8E81E79E575E9C9A736225C82C5B0E515D585B7DE22545D2E87EB
+        96C5E7A559930E2857EA27580C4B8ED589D75E33703E456FB8FA8C4FA465C79F
+        5066F5122C765B3E50FFE40D5F754ED58316CD392ADD70F63965561FB735B05B
+        F2CA4AAC7A57DEFE5F70EB2D65561FC162C8766C03C5AAB75DFB1FDF4BDF5CF5
+        5899D543B018B24FF4AFAC9C59912DBEE9C6815787EB22580CC9DD6B9E4AF73C
+        BDA6CCE875F946E07C2B4B5D048B21F9D31AFF3889219F67D5B5CA122C06CDEA
+        8A9DA96B9525580C5A3E6485F7925759F9C598AA09168392FF186F7B7C6599C1
+        CFFA660D7F1F82C5A0D4F1C7486CFFBA4AB068883AFE18892DAFC0ABDE160A16
+        8372F7D34F9511EC5CD5F7E7091683E2C17B0C467E506395040B689B2D15FF8F
+        4DB08030040B0843B08030040B0843B08030040B0843B08030040B0843B08030
+        040B08A3A39F4BF8F27F3F99367DE3B6F4CA93ABD3F60D1BD3F68D1BCB77C8F6
+        1C352AED7DE8D481AFF1271C9FC6CE39A27CA77E3FBF6C4919C1CE5D7AD229E9
+        F2F9A79659FB7524582FAD7838ADFBF257D396871F2957188C111326A4C99F3E
+        2F7DF88C05E54A7D048BC1A83A58B56E095FDFB62D3DB1F4F7D3CA73178BD56E
+        C82BD0D5975C9E1E59F89BE9B50D1BCA55E81DB5052BC7EAA113E7A717BEFBEF
+        E50ABB2B6FA11F5D78E6C0EF147A496DC1CA2B83375E7EB9CC18AEFCBBCCBF53
+        E825B5042B9F595959B55FFE9DFEE82E9F6443EFA82558F9809D6AE45596AD21
+        BDA2F260E55B171CB057276F0DD77EE9CFCA0CBA5BE5C1CAF759512DDB6D7A45
+        E5C1B2BAAA5E5E65E57342E87695072BBF040FD00E9506CB6130D04E9506CBEA
+        0A68A7CAB78400ED225840188205842158401882058421584018820584215840
+        1882058421584018820584215840188205842158401882058421584018820584
+        2158401882058421584018820584215840188205842158401882058421584018
+        8205842158401882058421584018820584215840188205842158401882058421
+        58401882058421584018820584215840187DAD7E65DC762FAD7838AD3C777199
+        31147B1F3A35ED396A5499EDDAC17FF80769D4AF1C5A66EDF7F1BFFE8B32EA4E
+        F73CBDA68C188E4B4F3A255D3EFFD4326B3FC16A8031471C9EC69F707CDAB7FF
+        6BE4C489E52A9DF083CD9BD36DAB1E4B5F5FF1605AB9E1B97295C1AA3A58B684
+        1D940375CC83F7A6597FFFB7E98045678B55031C347E7C5A76FC09E9E1CF5D92
+        565C74713A76CA21E53B34816075C0880913D2CCAFDD900EBBF62FD307F6D9A7
+        5CA569664D3A20DDB5ECFC74E7D2CFA6C9E3C695AB749260D52CAFAA66DFBA3C
+        8D9D7344B942D31D77C847D2C3175D9216CD39AA5CA15304AB46F960DCAA2AA6
+        317BED956E38FB9CF437672D2A57E804C1AAC9A4DF396BE09C8AD8CE39F2E881
+        83653A43B06A906F5198F2F98BCA8CE8F2AB600EE33B43B02A96EFA59A76ED35
+        6546B7F8A7C5E7A5D1234796197511AC8A4DECDF0ABA5DA1FBE433ADA5C7CD2B
+        33EA225815CAABAB498BCE2A33BACDB28FCD73BB43CD04AB42933F7D9E5704BB
+        585E655D7A72757775F3B304AB42F99E2BBADB82E933CB883A085645F22B83CE
+        AEBA5F5E659D2E5AB511AC8A8C9F6775D52B664C9C5446544DB06098268F1F5F
+        46544DB02A3266CEE16544B73B689C60D545B08030040B0843B08030040B0843
+        B08030040B0843B08030040B08A3D2600DE583400176A5D26055F949C440EFA9
+        7C4B983F830FA01D2A0F96F7D401ED5279B03C66056897CA83F50B1F9F675B08
+        B445E5C1CAF2B3CD0186AB96607DF88C05038F0C06188E5A82954DBDF24FCA08
+        60F7D416AC7C4FD6EC7F5E6EA505ECB6DA8295E5681D7EEB3FA6C99F3ACF5DF0
+        C090D51AAC1D7EE9F796A423EFBC63609BE8B3FB80C1EA6BF52BE38E7A7DDBB6
+        F4CA93ABCB2CBEBCF5F5A9CFBDE1EE354FA513AFBDA6CC7ADBA5279D922E9F5F
+        DDA761372658109560BDADEA6075644B0874A79993AAFD5059C102DA6672C59F
+        D12858405B4C1E372ECD9A7440995543B080B6387DC6AC32AA8E60016DB1F4B8
+        7965541DC10286EDD82987A483C6577B7E950916306C979D5CDDAD0CEF2458C0
+        B0E4D5D571877CA4CCAA2558C0B0D4B5BACA040BD86D8BE61C55DBEA2A132C60
+        B7CC9C3829DD70F63965560FC102866CF4C891E996C5F53FFA5CB08021C987EC
+        6BFEE88A5A6E637837C102066DE9C7E6A5BB969D9FC6ECB557B9522FC1027629
+        BF4FF0CEA59F4D7FBEF093E54A670816B053F9AC2A3FE36ACD1F5F59EBAB813B
+        E3017E304CDDF600BFFCEADFB1FD71CA67550B6A7843F35008160CD396575F4D
+        2B373C5766B1356115F57E040B08C31916108660016108161086600161081610
+        866001610816108660016108161086600161786B0E0C536BFBFAD47A7E799935
+        47DF8803522A5F7D230E2C5763132C18A6D696FB536BD5C2326BA80FF6876BCC
+        4753DFFE67A6BE31C7948BF1D812422FF8F1B3296D5A3E10D637572F4BAD37B6
+        966FC42258D06B72B81E3A3CB55E79A25C8843B0A017FD645B6AFDD709A9F5FC
+        CDE5420C82053DACF5D46742454BB0A0C7B5D65E16667B2858D0EBF2F6F0FBE7
+        863888172C60E055C4D673D79749730916F0960DD7377E952558C05BFAB786A9
+        E167598205FCBFD69607CAA899040B78DB56C102680BC102DE668505D01E8205
+        8421584018820584215840188D7D44F296D75E4FB73FFEA374D3231BCB9558AE
+        5A3035CD9838AACCE866211E913C047B1CBBA98C9AA771C1CAA1BAEE9EF5035F
+        5BB7BF51AEC673C792D969EE947165463713ACFA346A4BF80F2B36A6C3AEB82F
+        7DF13BCF848E15508DC604EB73DF589D962CFFBE50013BD58860E595D575F7AE
+        2F3380F7D6F160DDFBF48B032B2B805DE978B0BEF09D67CA08E0FD7534587975
+        75DFDA97CA0CE0FD75345851EFB1023AA3A3C1CA3786020C564783E516066028
+        3A16AC7C7E0530141D5D61010C85600161081610866001610816108660016108
+        161086600161081610866055E45E4FA1E81DAF3C5106544DB02AB2F535EF93EC
+        15AD37B695115513AC8ADCBBD67B257BC6E66F95015513AC8A3CBEF195B4EEC5
+        D7CA8C6ED57A636B4AFFEB11DF7511AC0ADDFEC40FCB88AEF582D5559D04AB42
+        F9C360E96EAD0DD797117510AC0AAD7F697BFAF23DEBCA8C6ED37AFE66DBC19A
+        0956C5BEF8ED67063E7E9FEE92CFAE5AEBAE2E33EA225815CB8F81FEEDBF5B59
+        66748BD6EACFA4F4E367CB8CBA08560DF247999D77B39B0BBBC59BAB97B995A1
+        4304AB26373DFC3FA2D505DE5C7B594A9B9697197513AC1AED889633AD980656
+        565E15EC28C1AA598ED6FCEB1E71536920ADEDEBD39B8FCEB3B26A00C1EA807C
+        17FC6157DE97BEF0EDB5E50A4D945F09CC5BC0D68A23DCBED0107DAD7E655CAB
+        FCB984F3BFF26899F5AE03C78E4873A78C4DA74CDB2F9D367DBF72954E6ABD70
+        476A6DFEB7B7EE62FF49EFBDB1798F63379551F30856C3E4801D386EE4C0F8AA
+        0553D38C89A306C64D97B74DADE7836E99B63EF0D6BFDE173840B0DE8360EDDA
+        1D4B66F7AFBEC69559B3B5B6DC9F5AAB16961991353958CEB08030040B0843B0
+        8030040B0843B08030040B0843B08030040B0843B08030040B0843B08030040B
+        0843B08030040B0843B08030040B0843B08030040B0843B08030040B0843B080
+        30040B0843B080303A16ACD1233F50460083D3B16045F944E34E9AEE77043FA5
+        A35BC2E913F62E23DE2D7F64FD18AB50F8291D0DD6DC83637C0C7B27CC9D32B6
+        8C801D3A1AACB38E985046BCDB29D3F62B2360878E062B9F63FDEAC15612EF96
+        B783A74D172C78B78E062BBBF8D77EB98CD8E14B0BA69611F04E1D0FD6DC29E3
+        D257CE9C56667C6AEE815657B0131D0F5676F69C09E98E25B3D3E8117B962BBD
+        E9F3FDABCDAB7EC3EA0A76A611C1CAF24AEBFE0B8EEAC95B1DF2CF7CFFF947A5
+        8B7FFDE07205782F8D09563679DCC8F4C005470FAC347A61B5957FC6FCB3E69F
+        D98DB4B06B7DAD7E65DC38AB36BC9C6E7FE28765D65DE61E3C766055D92D5A5B
+        EE4FAD550BCB8CC8F638765319354FA383451C82D53D9A1CAC466D0901DE8F60
+        016108161086600161081610866001610816108660016FFBE00165D04C8205BC
+        6D8460D10BF61C5D06842658F482BEBD0F4BE9439E6B165DDFE88F9651330916
+        6DD3B7FF9965445863048B5EF18BBF95D2CFED532684D3BFBAEA1B7160993493
+        60D1367DF91C6BE2EF9619D1F44DBEB08C9A4BB068ABBE49FDC1B2CA8A27AFAE
+        C61C5326CD2558B4555E65F5CDFC17D18AE443D352DFB4AF9549B309166D975F
+        31EC9BFA576546A3F5FF8F25C76A603B1F80605189BE7DE7A7BE19B75A693559
+        5E59CDFE6EE30FDADF49B0A84C3E1319D81E36FCDE9E9EB4FF9903FF6D22C52A
+        F34C776A31F0CCF77557A7B4F58172858EC8A19A7C61B850ED2058D4AAB57D7D
+        6A3DBFFCAD708957F5F2963C9F29E69B7AF73D39CC59D5CE08161086332C200C
+        C102C2102C200CC102C2102C200CC102C2102C200CC102C2102C200CC102C210
+        2C200CC102C2102C200CC102C2102C200CC102C2102C208894FE0F44239A3F8D
+        11BE160000000049454E44AE426082}
+      Position.X = 504.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 76.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+    end
+  end
+  object OK: TButton
+    Position.X = 80.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = '+'
+    OnClick = OKClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Caret.Color = claThistle
+  end
+  object SOMANDO: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'OPERADORES'
+    TabOrder = 5
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 120.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Caret.Color = claThistle
+  end
+  object Label1: TLabel
+    Position.X = 176.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Resposta = '
+    TabOrder = 6
+  end
+  object lblData: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 512.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'lblData'
+    TabOrder = 7
+    OnEnter = lblDataEnter
+  end
+  object Panel1: TPanel
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 473.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object Label3: TLabel
+      StyledSettings = [Style]
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.Font.Size = 25.000000000000000000
+      TextSettings.FontColor = claCoral
+      Text = 'LOGIN'
+      TabOrder = 1
+    end
+    object Label4: TLabel
+      StyledSettings = [Style]
+      Position.X = 192.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Consolas'
+      TextSettings.Font.Size = 25.000000000000000000
+      TextSettings.FontColor = claCoral
+      Text = 'SENHA'
+      TabOrder = 0
+    end
+    object editUser: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object editSenha: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Password = True
+      Position.X = 192.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button2: TButton
+      StyledSettings = [Style]
+      Position.X = 368.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'LOGAR'
+      TextSettings.Font.Family = 'Impact'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claCoral
+      OnClick = Button2Click
+    end
+  end
+  object editPrimo: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 416.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button3: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = #201' PRIMO?'
+    OnClick = Button3Click
+  end
+  object lblPrimo: TLabel
+    Position.X = 416.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Resposta = '
+    TabOrder = 11
+  end
+  object Label6: TLabel
+    Position.X = 320.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NOTA 2'
+    TabOrder = 3
+  end
+  object Label7: TLabel
+    Position.X = 512.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'LIMPE TODOS OS BOT'#213'ES PARA VER UM SEGREDO'
+    TabOrder = 12
+    object Button10: TButton
+      Position.Y = 99.000000000000000000
+      TabOrder = 0
+      Text = 'Click Me!'
+      OnClick = Button10Click
+    end
+    object Button7: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 107.000000000000000000
+      TabOrder = 1
+      Text = 'Click Me!'
+      OnClick = Button7Click
+    end
+    object Button11: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 2
+      Text = 'Click Me!'
+      OnClick = Button11Click
+    end
+    object Button12: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 3
+      Text = 'Click Me!'
+      OnClick = Button12Click
+    end
+    object Button13: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 4
+      Text = 'Click Me!'
+      OnClick = Button13Click
+    end
+    object Button14: TButton
+      Position.X = 40.000000000000000000
+      Position.Y = 99.000000000000000000
+      TabOrder = 5
+      Text = 'Click Me!'
+      OnClick = Button14Click
+    end
+    object Button15: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 6
+      Text = 'Click Me!'
+      OnClick = Button15Click
+    end
+    object Button16: TButton
+      Position.X = 10.000000000000000000
+      Position.Y = 99.000000000000000000
+      TabOrder = 7
+      Text = 'Click Me!'
+      OnClick = Button16Click
+    end
+    object Button17: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 8
+      Text = 'Click Me!'
+      OnClick = Button17Click
+    end
+    object Button18: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 9
+      Text = 'Click Me!'
+      OnClick = Button18Click
+    end
+    object Button19: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 123.000000000000000000
+      TabOrder = 10
+      Text = 'Click Me!'
+      OnClick = Button19Click
+    end
+    object Button20: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 99.000000000000000000
+      TabOrder = 11
+      Text = 'Click Me!'
+      OnClick = Button20Click
+    end
+    object Button21: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 99.000000000000000000
+      TabOrder = 12
+      Text = 'Click Me!'
+      OnClick = Button21Click
+    end
+    object Button22: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 107.000000000000000000
+      TabOrder = 13
+      Text = 'Click Me!'
+      OnClick = Button22Click
+    end
+    object Button23: TButton
+      Position.X = 40.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 14
+      Text = 'Click Me!'
+      OnClick = Button23Click
+    end
+    object Button24: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 107.000000000000000000
+      TabOrder = 15
+      Text = 'Click Me!'
+      OnClick = Button24Click
+    end
+    object Button25: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 99.000000000000000000
+      TabOrder = 16
+      Text = 'Click Me!'
+      OnClick = Button25Click
+    end
+    object Button26: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 115.000000000000000000
+      TabOrder = 17
+      Text = 'Click Me!'
+      OnClick = Button26Click
+    end
+    object Button8: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 107.000000000000000000
+      TabOrder = 18
+      Text = 'Click Me!'
+      OnClick = Button8Click
+    end
+    object Button9: TButton
+      Position.X = 24.000000000000000000
+      Position.Y = 107.000000000000000000
+      TabOrder = 19
+      Text = 'Click Me!'
+      OnClick = Button9Click
+    end
+  end
+  object edtParImpar: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Position.X = 288.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button27: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = #201' PAR?'
+    OnClick = Button27Click
+  end
+  object Button28: TButton
+    Position.X = 352.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = #201' IMPAR?'
+    OnClick = Button28Click
+  end
+  object lblParImpar: TLabel
+    Position.X = 328.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+  end
+end

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/15 09:33:14.000.816,=C:\Users\Paulista\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/15 09:46:03.000.695,C:\Users\Paulista\Desktop\Brincando Delphi\uTest.fmx=C:\Users\Paulista\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2019/11/15 09:46:03.000.695,C:\Users\Paulista\Desktop\Brincando Delphi\uTest.pas=C:\Users\Paulista\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/11/15 09:46:28.000.929,C:\Users\Paulista\Desktop\Brincando Delphi\Teste.dproj=C:\Users\Paulista\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/11/16 23:30:37.000.219,=C:\Users\Paulista\Desktop\Brincando Delphi\Unit1.pas</Transaction>
+    <Transaction>2019/11/16 23:34:16.000.047,=C:\Users\Paulista\Desktop\Brincando Delphi\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
